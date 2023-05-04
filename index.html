@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Jeopardy Game</title>
+</head>
+
+<body>
+    <div class="myjeapordygame">
+
+    <header class="topheader">
+    <h1>Jeopardy Game</h1>
+    <p class="score">SCORE <span class="scorecounter"></span></p>
+    </header>
+
+        <section class="board">
+
+            <div class="cat">Movies</div>
+            <div class="cat">Songs</div>
+            <div class="cat">Foods</div>
+            <div class="cat">Dogs</div>
+            <div class="cat">"F" words</div>
+
+            <button id="Btn1">100</button>
+            <button id="Btn2">100</button>
+            <button id="Btn3">100</button>
+            <button id="Btn4">100</button>
+            <button id="Btn5">100</button>
+
+            <button id="Btn1">200</button>
+            <button id="Btn2">200</button>
+            <button id="Btn3">200</button>
+            <button id="Btn4">200</button>
+            <button id="Btn5">200</button>
+
+            <button id="Btn1">300</button>
+            <button id="Btn2">300</button>
+            <button id="Btn3">300</button>
+            <button id="Btn4">300</button>
+            <button id="Btn5">300</button>
+
+            <button id="Btn1">400</button>
+            <button id="Btn2">400</button>
+            <button id="Btn3">400</button>
+            <button id="Btn4">400</button>
+            <button id="Btn5">400</button>
+
+            <button id="Btn1">500</button>
+            <button id="Btn2">500</button>
+            <button id="Btn3">500</button>
+            <button id="Btn4">500</button>
+            <button id="Btn5">500</button>
+
+        </div>
+<!--Pulled this code from Drew conley's Youtube channel, reworded it to my own classes.
+//link: https://www.youtube.com/watch?v=fYMBkayHmUo&list=RDCMUCvQwAK9oAYXM0RMucLy2-BA&index=1 -->
+
+        <div class="mymodal">
+            <div class="innermodal">
+                <h2 class="jeapordyclue"></h2>
+                <form autocomplete="off">
+                    <button type="submit">ANSWER</button>
+                    <input name = 'user-answer' type = 'text' />
+                </form>
+                
+                    <div class="results">
+                        <p class="correctanswer">YOUR A GENEIUS!</p>
+                        <p class="incorrectanswer">OHHHH SORRY THAT AINT RIGHT!</p>
+                        <p class="thecorrectanswer">WHAT WE WERE LOOKING FOR WAS <span class="realanswer"></span>
+                    </p>
+
+                    </div>  
+            </div>
+        </div>
+    </div>
+
+        </section>
+    
+
+
+
+<script src="app.js"></script>
+</body>
+
+</html>
