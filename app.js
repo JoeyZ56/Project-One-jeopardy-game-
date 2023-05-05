@@ -19,7 +19,7 @@ const button6 = document.querySelector('submit');
 
 	/*----- event listeners -----*/
 button1.addEventListener('click', async (event) => {
-    const response = await fetch("https://jservice.io/api/categories/102");
+    const response = await fetch('https://jservice.io/api/category?id=102');
     const data1 = await response.json()
     console.log(data1)
 });
@@ -42,7 +42,7 @@ button5.addEventListener('click', async (event) => {
 });
 
 	/*----- functions -----*/
-    //data1.clues[0].question.
+    //data1.clues[0].question
 
 //pulled this shuffle function from stackoverflow
 function shuffle(a) {
@@ -69,7 +69,6 @@ function shuffle(a) {
             this.boardEl = element.querySelector('.board');
             this.scoreBoardEl = element.querySelector('.score');
             this.formEl = element.querySelector('form');
-            //got help on the 'inputEl' format from Drew conley's Youtube channel.
             this.inputEl = element.querySelector('input[name-user-answer]')
             this.modalEl = element.querySelector('.mymodal');
             this.clueEl = element.querySelector('.jeapordyclue');
@@ -79,10 +78,17 @@ function shuffle(a) {
             this.realAnswerEl = element.querySelector('.thecorrectanswer');
         }
         initGame() {
-            this.updateScore();
+            this.updateScore(0);
+            this.fetchcategories();
         }
-        updateScore() {
+        updateScore(update) {
+            this.score += update;
             this.scoreBoardEl.textContent = this.score
+        }
+        fetchcategories() {
+            const categories = this.useCategoryIds.map(categoryId => {
+
+            })
         }
     }
 
