@@ -44,4 +44,30 @@
     font-size: 35px;
   }
   
+  h2 {
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+  }
   
+  h3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+  }
+
+.scoreadder {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+  .scoreadder > button {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border: 1px;
+    border-color: black;
+    
+  }

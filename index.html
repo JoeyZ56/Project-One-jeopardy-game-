@@ -10,12 +10,12 @@
 </head>
 
 <body>
-    <div class="myjeapordygame">
+    <div id="myjeapordygame">
 
-    <header class="topheader">
-    <h1>Jeopardy Game</h1>
-    <p class="score">SCORE <span class="scorecounter"></span></p>
-    </header>
+        <header class="topheader">
+            <h1>Jeopardy Game</h1>
+            <p class="score">SCORE <span class="scorecounter"></span></p>
+        </header>
 
         <section class="board">
 
@@ -25,65 +25,71 @@
             <div class="cat">Dogs</div>
             <div class="cat">"F" words</div>
 
-            <button id="Btn1">100</button>
-            <button id="Btn2">100</button>
-            <button id="Btn3">100</button>
-            <button id="Btn4">100</button>
-            <button id="Btn5">100</button>
+            <button id="Btn1-100">100</button>
+            <button id="Btn2-100">100</button>
+            <button id="Btn3-100">100</button>
+            <button id="Btn4-100">100</button>
+            <button id="Btn5-100">100</button>
 
-            <button id="Btn1">200</button>
-            <button id="Btn2">200</button>
-            <button id="Btn3">200</button>
-            <button id="Btn4">200</button>
-            <button id="Btn5">200</button>
+            <button id="Btn1-200">200</button>
+            <button id="Btn2-200">200</button>
+            <button id="Btn3-200">200</button>
+            <button id="Btn4-200">200</button>
+            <button id="Btn5-200">200</button>
 
-            <button id="Btn1">300</button>
-            <button id="Btn2">300</button>
-            <button id="Btn3">300</button>
-            <button id="Btn4">300</button>
-            <button id="Btn5">300</button>
+            <button id="Btn1-300">300</button>
+            <button id="Btn2-300">300</button>
+            <button id="Btn3-300">300</button>
+            <button id="Btn4-300">300</button>
+            <button id="Btn5-300">300</button>
 
-            <button id="Btn1">400</button>
-            <button id="Btn2">400</button>
-            <button id="Btn3">400</button>
-            <button id="Btn4">400</button>
-            <button id="Btn5">400</button>
+            <button id="Btn1-400">400</button>
+            <button id="Btn2-400">400</button>
+            <button id="Btn3-400">400</button>
+            <button id="Btn4-400">400</button>
+            <button id="Btn5-400">400</button>
 
-            <button id="Btn1">500</button>
-            <button id="Btn2">500</button>
-            <button id="Btn3">500</button>
-            <button id="Btn4">500</button>
-            <button id="Btn5">500</button>
+            <button id="Btn1-500">500</button>
+            <button id="Btn2-500">500</button>
+            <button id="Btn3-500">500</button>
+            <button id="Btn4-500">500</button>
+            <button id="Btn5-500">500</button>
 
+            <div class="scoreadder">
+            <button id="count100"></button>
+            <button id="count200"></button>
+            <button id="count300"></button>
+            <button id="count400"></button>
+            <button id="count500"></button>
         </div>
-<!--Pulled this code from Drew conley's Youtube channel, reworded it to my own classes.
+
+    </div>
+
+    <!--Pulled this code from Drew conley's Youtube channel, reworded it to my own classes.
 //link: https://www.youtube.com/watch?v=fYMBkayHmUo&list=RDCMUCvQwAK9oAYXM0RMucLy2-BA&index=1 -->
 
-        <div class="mymodal">
-            <div class="innermodal">
-                <h2 class="jeapordyclue"></h2>
-                <form autocomplete="off">
-                    <button type="submit">ANSWER</button>
-                    <input name = 'user-answer' type = 'text' />
-                </form>
-                
-                    <div class="results">
-                        <p class="correctanswer">YOUR A GENEIUS!</p>
-                        <p class="incorrectanswer">OHHHH SORRY THAT AINT RIGHT!</p>
-                        <p class="thecorrectanswer">WHAT WE WERE LOOKING FOR WAS <span class="realanswer"></span>
-                    </p>
+    <div class="mymodal">
+        <div class="innermodal">
+            <h2 class="jeapordyquestion"></h2>
+            <h3 class="jeapordyanswer"></h3>
+            <form autocomplete="off">
+                <button type="submit">ANSWER</button>
+                <input name='user-answer' type='text' />
+            </form>
 
-                    </div>  
+           
+
             </div>
         </div>
     </div>
+    </div>
 
-        </section>
-    
+    </section>
 
 
 
-<script src="app.js"></script>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
