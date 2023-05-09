@@ -14,7 +14,7 @@
 
         <header class="topheader">
             <h1>Jeopardy Game</h1>
-            <p class="score">SCORE <span class="scorecounter"></span></p>
+            <p>SCORE <span class="scorecounter">0</span></p>
         </header>
 
         <section class="board">
@@ -55,33 +55,30 @@
             <button id="Btn4-500">500</button>
             <button id="Btn5-500">500</button>
 
-            <div class="scoreadder">
-            <button id="count100"></button>
-            <button id="count200"></button>
-            <button id="count300"></button>
-            <button id="count400"></button>
-            <button id="count500"></button>
-        </div>
+          
+        
 
     </div>
 
-    <!--Pulled this code from Drew conley's Youtube channel, reworded it to my own classes.
-//link: https://www.youtube.com/watch?v=fYMBkayHmUo&list=RDCMUCvQwAK9oAYXM0RMucLy2-BA&index=1 -->
+    <div class="scoreadder">
+        <button id="add100">100 Points</button>
+        <button id="add200">200 Points</button>
+        <button id="add300">300 Points</button>
+        <button id="add400">400 Points</button>
+        <button id="add500">500 Points</button>
 
-    <div class="mymodal">
-        <div class="innermodal">
+    </div>
+
             <h2 class="jeapordyquestion"></h2>
             <h3 class="jeapordyanswer"></h3>
             <form autocomplete="off">
                 <button type="submit">ANSWER</button>
-                <input name='user-answer' type='text' />
+                <input name='user-answer' type='text' class="jeopardyResponce"/>
             </form>
 
            
 
             </div>
-        </div>
-    </div>
     </div>
 
     </section>

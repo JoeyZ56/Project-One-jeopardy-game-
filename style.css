@@ -57,18 +57,19 @@
     align-items: end;
   }
 
-.scoreadder {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
-  .scoreadder > button {
-    margin: 10px;
-    width: 100px;
-    height: 100px;
-    border-size: 1px;
-    background-color: white;
+  .scoreadder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     
+  }
+
+  .scoreadder > button{
+    margin: 10px;
+    width: 50px;
+    height: 35px;
+    border-radius: 1px;
+    background-color: white;
+    font-size: 12px;
   }

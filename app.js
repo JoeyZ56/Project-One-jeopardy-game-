@@ -1,8 +1,9 @@
   /*----- constants -----*/
   const game = document.querySelector('#myjeapordygame');
-  const scoreBoard = document.querySelector('.score');
+  const scoreBoard = document.querySelector('.scorecounter');
   const jeapordyquestion = document.querySelector('.jeapordyquestion')
   const jeapordyanswer =  document.querySelector('.jeapordyanswer')
+  const jeapordyResponce = document.querySelector('.jeapordyResponce')
   
   
 //row 100
@@ -35,6 +36,12 @@
   const button23 = document.querySelector("#Btn3-500");
   const button24 = document.querySelector("#Btn4-500");
   const button25 = document.querySelector("#Btn5-500");
+  //counters
+  const button26 = document.querySelector('#add100')
+  const button27 = document.querySelector('#add200')
+  const button28 = document.querySelector('#add300')
+  const button29 = document.querySelector('#add400')
+  const button30 = document.querySelector('#add500')
   
   
   
@@ -88,7 +95,6 @@
   button21.addEventListener('click', async (event) => {
       const response = await fetch('https://jservice.io/api/category?id=102');
       const data1 = await response.json()
-      console.log(data1)
       jeapordyquestion.innerHTML = `${data1.clues[21, 22, 23, 24, 25].question}`;
       setTimeout(() => {
         jeapordyanswer.innerHTML = `${data1.clues[21, 22 , 23, 24, 25].answer}`;
@@ -263,5 +269,35 @@
         jeapordyanswer.innerHTML = `${data5.clues[13, 14, 15].answer}`;
       }, 15000)
   });
+
+  //Counters
+  button26.addEventListener('click', (event) => {
+    scoreBoard.textContent = parseInt(scoreBoard.textContent) + 100;
+    console.log(scoreBoard.textContent)
+  });
+  button27.addEventListener('click', (event) => {
+    scoreBoard.textContent = parseInt(scoreBoard.textContent) + 200;
+    console.log(scoreBoard.textContent)
+  });
+  button28.addEventListener('click', (event) => {
+    scoreBoard.textContent = parseInt(scoreBoard.textContent) + 300;
+    console.log(scoreBoard.textContent)
+  });
+  button29.addEventListener('click', (event) => {
+    scoreBoard.textContent = parseInt(scoreBoard.textContent) + 400;
+    console.log(scoreBoard.textContent)
+  });
+  button30.addEventListener('click', (event) => {
+    scoreBoard.textContent = parseInt(scoreBoard.textContent) + 500;
+    console.log(scoreBoard.textContent)
+  });
+
+  //submit answer
+
+ 
+
   
       /*----- functions -----*/
+     
+
+      
