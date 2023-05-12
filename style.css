@@ -73,3 +73,7 @@
     background-color: white;
     font-size: 12px;
   }
+
+  .scoreadder > button:hover {
+    background-color:  rgb(93, 119, 231);
+  }
