@@ -45,16 +45,18 @@
   }
   
   h2 {
-    font-size: 30px;
+    font-size: 35px;
     display: flex;
-    justify-content: flex-start;
-    align-items: end;
+    justify-content: center;
+    align-items: center;
   }
   
   h3 {
     display: flex;
-    justify-content: flex-start;
-    align-items: end;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-size: 35px;
   }
 
   .scoreadder {

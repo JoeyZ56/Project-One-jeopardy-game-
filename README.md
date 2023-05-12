@@ -8,15 +8,6 @@ section = board layout
 div class "cats" = categories[Movies, Songs, Foods, Dogs, 'F' words]
 
 
-Css
-
-
-
-
-
-
-
-
 Javascript
 
 consts:

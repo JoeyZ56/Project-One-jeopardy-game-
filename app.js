@@ -4,9 +4,7 @@ const scoreBoard = document.querySelector('.scorecounter');
 const jeapordyquestion = document.querySelector('.jeapordyquestion')
 const jeapordyanswer = document.querySelector('.jeapordyanswer')
 const jeapordyResponce = document.querySelector('.jeapordyResponce')
-const answerButton1 = document.querySelector('.answerbutton') 
-let results = document.querySelector('.result')
-let currentQuestion;
+
 
 
 //row 100
@@ -63,13 +61,11 @@ button1.addEventListener('click', async (event) => {
     const response = await fetch('https://jservice.io/api/category?id=102');
     const data1 = await response.json()
     console.log(data1)
-    //demo time set to 1 second elay before answer shows
     //reassigning two variables to the same value!
-    jeapordyquestion.innerHTML = currentQuestion = `${data1.clues[0, 1, 2, 3, 4, 5].question}`;
-    jeapordyResponce
+    jeapordyquestion.innerHTML = `${data1.clues[0, 1, 2, 3, 4, 5].question}`;
     setTimeout(() => {
-        jeapordyanswer.innerHTML = `${data1.clues[0, 1, 2, 3, 4, 5].answer}`;
-    }, 1000);
+        jeapordyanswer.innerHTML = currentQuestion = `${data1.clues[0, 1, 2, 3, 4, 5].answer}`;
+    }, 15000);
 
 });
 button6.addEventListener('click', async (event) => {
@@ -303,18 +299,7 @@ button30.addEventListener('click', (event) => {
 
 
 
+alert('Welcome to my jeapordy game! Once you have clicked the category and value, you will have 15 seconds to answer the question. After the time is up the answer will appear in red at the bottom. if your are correct, add the value of your score with the number value buttons at the bottom. ENJOY!')
 
-/*----- functions -----*/
-//alert('Answers desplay after 15 seconds. honor system game DONT BE A CHEATER!!!')
 
-//Submit Answer
-answerButton1.addEventListener('click', userAnswer)
-function userAnswer() {
-    if (jeapordyResponce === `${currentQuestion.answer}`) {
-        console.log('CORRECT ANSWER')
-        
-    } else {
-        console.log('INCORRECT ANSWER!')
-    }
-}
 
