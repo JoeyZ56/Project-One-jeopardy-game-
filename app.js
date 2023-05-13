@@ -3,7 +3,7 @@ const game = document.querySelector('#myjeapordygame');
 const scoreBoard = document.querySelector('.scorecounter');
 const jeapordyquestion = document.querySelector('.jeapordyquestion')
 const jeapordyanswer = document.querySelector('.jeapordyanswer')
-const jeapordyResponce = document.querySelector('.jeapordyResponce')
+
 
 
 

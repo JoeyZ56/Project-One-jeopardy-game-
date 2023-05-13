@@ -29,5 +29,9 @@ button 26, 27, 28, 29, 30 = add [100, 200, 300, 400, 500] to scoreBoard
 
 Misc:
 setTimeout() wait 15 seconds display "answers"
-alert() = displays a message before start of game
+alert() = displays rules before start of game
 
+Link: https://joeyz56.github.io/Project-One-jeopardy-game-/
+
+Wireframe: https://files.slack.com/files-pri/T0351JZQ0-F055N204BT6/wireframe_pj1.png
+ 
